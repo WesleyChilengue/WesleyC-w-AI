@@ -23,7 +23,7 @@ export const getGeminiResponse = async (userMessage: string, products: Product[]
     ${productContext}
     
     Informações extras:
-    - Entregas em Maputo Cidade e Província.
+    - Entregas em Maputo Cidade e Província, sob custo adicional.
     - Pagamentos aceites: M-Pesa e E-mola.
     - Encomendas via WhatsApp.
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Instagram, Phone, Truck } from 'lucide-react';
+import { Instagram, Facebook, Phone, Truck } from 'lucide-react';
 import { STORE_INFO } from '../constants';
 
 const Footer: React.FC = () => {
     const num = STORE_INFO.whatsappNumber;
-    const fmt = `+${num.slice(0,3)} ${num.slice(3,6)} ${num.slice(6,9)} ${num.slice(9)}`;
+    const fmt = `+${num.slice(0, 3)} ${num.slice(3, 6)} ${num.slice(6, 9)} ${num.slice(9)}`;
 
     return (
         <footer className="bg-black text-white py-20 px-4">
@@ -12,10 +12,20 @@ const Footer: React.FC = () => {
                 <div className="md:col-span-2">
                     <span className="logo-chilen text-6xl text-white mb-6 block">Chilen</span>
                     <p className="text-gray-400 max-w-md mb-8">Vestindo a fé em Moçambique. Qualidade premium para quem carrega o nome de Jesus com orgulho.</p>
-                    <div className="flex space-x-6">
-                        <a href="https://instagram.com/Wesmathiasg" target="_blank" rel="noreferrer" className="hover:text-[#E4405F] transition-colors flex items-center space-x-2 group">
+                    <div className="flex flex-col gap-4">
+                        <a href="https://instagram.com/Chilen.mz" target="_blank" rel="noreferrer" className="hover:text-[#E4405F] transition-colors flex items-center space-x-2 group">
                             <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                            <span className="text-[10px] font-black uppercase tracking-widest">@Wesmathiasg</span>
+                            <span className="text-[10px] font-black uppercase tracking-widest">@Chilen.mz</span>
+                        </a>
+                        <a
+                            href="https://facebook.com/@chilenStore"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:text-[#1877F2] transition-colors flex items-center gap-2"
+                        >
+                            <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                            <span className="text-[10px] font-black uppercase tracking-widest">@chilen Store
+                            </span>
                         </a>
                     </div>
                 </div>
